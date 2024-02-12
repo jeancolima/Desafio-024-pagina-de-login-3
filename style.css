@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+* {
+    /* Colors */
+    --primary-color: #4b816a;
+    --secondary-color: #1b1822;
+    --background-color: #ffddd2;
+    --white: #FFF;
+    --black: #000;
+    --light-gray: #7e7e80;
+    /* Fonts */
+    --primary-font: 'Ubuntu', sans-serif;
+    --secondary-font: 'Protest Guerrilla', sans-serif;
+}
+
+body {
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: var(--primary-font);
+    background-color: var(--background-color);
+    color: var(--secondary-color);
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100dvh - 8rem);
+    padding: 4rem 2rem;
+}
+
+.login-card {
+    display: flex;
+    width: 1200px;
+    height: 600px;
+    background-color: var(--white);
+    border-radius: 32px;
+}
+
+.login-card-left-side {
+    width: 50%;
+    position: relative;
+    border-radius: 32px 0 0 32px;
+}
+
+.login-card-left-side img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 32px 0 0 32px;
+    opacity: 1;
+}
+
+.login-card-left-side h2 {
+    width: 300px;
+    position: absolute;
+    color: var(--white);
+    top: 50%;
+    left: 4rem;
+    transform: translateY(-50%);
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.login-card-right-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 50%;
+    padding: 2rem;
+    position: relative;
+}
+
+.logo {
+    font-family: var(--secondary-font);
+    font-size: 3rem;
+    color: var(--primary-color);
+}
+
+.login-card-right-side h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-top: 2rem;
+}
+
+.login-card-right-side h3 {
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+.form-email-field,
+.form-password-field {
+    width: 400px;
+    padding: .5rem;
+    border: 2px solid var(--primary-color);
+    border-radius: 16px;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.form-email-field p,
+.form-password-field p {
+    color: var(--light-gray);
+    margin-bottom: 10px;
+}
+
+.form-email-field input,
+.form-password-field input {
+    width: 95%;
+    border: 1px solid transparent;
+    outline: none;
+    font-family: var(--primary-font);
+    font-size: 1.2rem;
+}
+
+.forgot-password {
+    position: absolute;
+    right: 110px;
+    bottom: 170px;
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.login-card-buttons {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.login-card-buttons button {
+    width: 200px;
+    height: 50px;
+    border-radius: 8px;
+    font-family: var(--primary-font);
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.btn-login-card-login {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: 2px solid var(--primary-color);
+}
+
+.btn-login-card-register {
+    background-color: transparent;
+    color: var(--secondary-color);
+    border: 2px solid var(--primary-color);
+}
+
+.credits {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.2rem;
+    color: var(--black);
+}
+
+.credits a {
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--primary-color);
+}
